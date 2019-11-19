@@ -6,7 +6,7 @@
     ENTER: 13
   };
 
-  const mainElem = document.querySelector('main');
+  const mainElem = document.querySelector('body');
   const errorTemplate = '<div class="error"><p class="error__message">Action failed. Try again later!</p></div>';
   const successTemplate = '<div class="success"><p class="success__message">Your message has been sent!</p></div>';
 

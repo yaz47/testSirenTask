@@ -32,7 +32,7 @@ ul {
 
 body {
   position: relative;
-  min-width: 320px;
+  min-width: 330px;
   margin: 0;
   padding: 0;
 
@@ -60,10 +60,47 @@ body {
 
 .container {
   position: relative;
-  margin: 0 25px;
+  width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 400px;
-    margin: 0 auto;
+    width: 387px;
+  }
+}
+
+.success,
+.error {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+
+  padding-top: 300px;
+
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: rgba($black, 0.8);
+}
+
+.error {
+  background-color: rgba($red, 0.8);
+}
+
+.success__message,
+.error__message {
+  position: relative;
+
+  margin: 0 20px;
+
+  font: $text-template;
+  color: $white;
+
+  @media (max-width: $only-mobile-width) {
+    font: $text-template-mobile;
   }
 }

@@ -1,5 +1,6 @@
 .contact {
   position: relative;
+  min-height: 100vh;
   padding: 50px 0 100px;
 
   font: $text-default;
@@ -7,18 +8,22 @@
 
   background:
     linear-gradient(rgba($black, 0.3), rgba($black, 0.3)),
-    top 0 center / 1920px 1080px no-repeat url("../img/cosmos.jpg"),
+    top 0 center / 1920px 1080px repeat url("../img/cosmos.jpg"),
     $black;
 }
 
 .contact__title {
-  margin: 40px auto;
+  margin: 28px auto 25px;
 
   font: $text-title;
   color: $white;
   text-align: center;
 
+  overflow: hidden;
+
   @media (max-width: $only-mobile-width) {
+    margin: 3px auto 21px;
+
     font: $text-title-mobile;
   }
 }
@@ -32,16 +37,36 @@
   box-shadow: 0 4px 53px 5px rgba($black, 0.55);
 
   overflow-x: hidden;
+
+  @keyframes zoom-in {
+
+    0% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+      opacity: 1;
+    }
+  }
+
+  animation: zoom-in 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 .contact__inner-container {
   position: relative;
 
   margin: 0 45px;
+
+  text-align: center;
+
+  @media (max-width: $only-mobile-width) {
+    margin: 0 35px;
+  }
 }
 
 .contact__text {
-  margin: 5px 0;
+  margin: 12px 20px 0;
 
   font: $text-form;
   color: $white;
@@ -52,10 +77,14 @@
   }
 
   &--small {
+    margin-top: 7px;
+
     font: $text-form-label;
   }
 
   @media (max-width: $only-mobile-width) {
+    margin: 6px 20px 0;
+
     font: $text-form-mobile;
 
     &--small {
@@ -64,8 +93,37 @@
   }
 }
 
+.contact__fieldset {
+  margin-top: 8px;
+
+  text-align: left;
+
+  @media (max-width: $only-mobile-width) {
+    margin-top: 3px;
+  }
+}
+
+.contact__item {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    margin-bottom: 23px;
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
+  }
+}
+
 .contact__label {
   display: block;
+  order: 1;
 
   font: $text-form-label;
   color: $blue;
@@ -81,18 +139,15 @@
 
   @media (max-width: $only-mobile-width) {
     font: $text-form-label-mobile;
-
-    &--small {
-      font: $text-form-label-mobile;
-    }
   }
 }
 
 .contact__input {
   display: block;
+  order: 2;
   width: 100%;
   margin: 5px 0;
-  padding: 5px 0;
+  padding: 4px 10px 1px 0;
 
   font: $text-form;
   color: $pale-blue;
@@ -100,13 +155,21 @@
 
   border: none;
   border-bottom: 1px solid $desaturated-blue;
+  background-color: transparent;
 
   &:hover,
   &:focus {
     border-bottom: 1px solid $white;
   }
 
+  &:hover + .contact__label,
+  &:focus + .contact__label {
+    color: $pale-blue;
+  }
+
   @media (max-width: $only-mobile-width) {
+    padding: 2px 30px 1px 0;
+
     font: $text-form-mobile;
   }
 }
@@ -117,10 +180,13 @@
 }
 
 .contact__checkbox-label {
+  @include defaultHoverEffect();
+
   position: relative;
   display: block;
   width: 31px;
   height: 31px;
+  margin: 0 7px 0 2px;
 
   border-radius: 8px;
   background-color: $medium-blue;
@@ -153,7 +219,7 @@
 /* stylelint-enable */
 
 .contact__policy-text {
-  margin: 0;
+  margin: 5px;
   padding: 0;
 
   font: $text-form-label;
@@ -161,6 +227,8 @@
   text-align: left;
 
   @media (max-width: $only-mobile-width) {
+    margin: 4px;
+
     font: $text-form-label-mobile;
   }
 }
@@ -168,13 +236,24 @@
 .contact__police-link {
   color: $grayish-blue;
   text-decoration: underline;
+
+  transition: color 0.2s ease-in;
+
+  &:hover {
+    color: $pale-blue;
+  }
+
+  &:active {
+    color: rgba($pale-blue, 0.7);
+  }
 }
 
 .contact__button {
   @include defaultHoverEffect();
 
   display: inline-block;
-  padding: 12px 30px;
+  margin: 30px 10px 20px;
+  padding: 11px 40px 10px;
 
   font: $text-form;
   color: $pale-blue;
@@ -185,7 +264,8 @@
   background-color: $medium-blue;
 
   @media (max-width: $only-mobile-width) {
-    padding: 10px 25px;
+    margin: 26px 10px 15px;
+    padding: 10px 34px;
 
     font: $text-form-mobile;
 

@@ -109,7 +109,10 @@ function createBuildJs() {
       'source/js/polyfill.js',
       'source/js/picturefill.min.js',
       'source/js/pixelglass.min.js',
-      'source/js/utils.js'
+      'source/js/utils.js',
+      'source/js/backend.js',
+      'source/js/renderMsg.js',
+      'source/js/contact.js'
     ])
     .pipe(sourcemap.init())
     .pipe(concat('script.min.js'))
