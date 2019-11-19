@@ -5,8 +5,9 @@ html(lang='en')
     meta(charset='utf-8')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     meta(name='format-detection' content='telephone=no')
-    link(rel='preload' href='fonts/trirong-light.woff2' as='font' crossorigin='anonymous')
-    link(rel='preload' href='fonts/trirong-regular.woff2' as='font' crossorigin='anonymous')
+    link(rel='preload' href='fonts/roboto-light.woff2' as='font' crossorigin='anonymous')
+    link(rel='preload' href='fonts/roboto-regular.woff2' as='font' crossorigin='anonymous')
+    link(rel='preload' href='fonts/roboto-medium.woff2' as='font' crossorigin='anonymous')
     link(href='css/style.min.css' rel='stylesheet')
 
     block title
@@ -29,6 +30,8 @@ html(lang='en')
 
   body
 
-    include ../blocks/form/form.pug
+    h1(class='visually-hidden') Contact form
+
+    include ../blocks/contact/contact.pug
 
     script(src='js/script.min.js')

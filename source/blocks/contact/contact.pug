@@ -1,35 +1,83 @@
 section(class='contact')
   div(class='contact__container container')
-    h2(class='contact__title') Let's work?
+
+    h2(class='contact__title') Hello
+
     div(class='contact__form-wrapper')
+
       form(class='contact__form'
         method='POST'
         enctype='multipart/form-data'
         autocomplete='on'
         action='https://echo.htmlacademy.ru')
-        label(class='visually-hidden' for='name') Name
-        input(class='contact__input'
-          type='text'
-          id='name'
-          name='name'
-          pattern='[а-яА-ЯёЁ\\w\\s]{2,30}'
-          title='Name can contain letters and digits from 2 to 30 symbols'
-          placeholder='*Your name'
-          required)
-        label(class='visually-hidden' for='email') Email
-        input(class='contact__input'
-          type='email'
-          id='email'
-          name='email'
-          title='Email'
-          placeholder='*Your Email'
-          required)
-        label(class='visually-hidden' for='message') Message
-        textarea(class='contact__textarea'
-          id='message'
-          name='message'
-          placeholder='Your Messages'
-          rows='3'
-          autocomplete='off'
-          required)
-        button(class='contact__button button button--uppercase' type='submit') Send Message
+
+        div(class='contact__inner-container')
+
+          p(class='contact__text') For business inquiries please use the form below
+          p(class='contact__text contact__text--dark contact__text--small') * Required
+
+          ul(class='contact__fieldset')
+            li(class='contact__item')
+              label(class='contact__label contact__label--req' for='name') Name
+              input(class='contact__input'
+                type='text'
+                id='name'
+                name='name'
+                pattern='[\\w\\s]{2,30}'
+                title='Name can contain letters and digits from 2 to 30 symbols'
+                required)
+            li(class='contact__item')
+              label(class='contact__label contact__label--req' for='company') Company
+              input(class='contact__input'
+                type='text'
+                id='company'
+                name='company'
+                pattern='[\\S\\s]{2,100}'
+                title='Company name can contain up to 100 symbols'
+                required)
+            li(class='contact__item')
+              label(class='contact__label contact__label--req' for='email') E-mail
+              input(class='contact__input'
+                type='email'
+                id='email'
+                name='email'
+                title='E-mail'
+                required)
+            li(class='contact__item')
+              label(class='contact__label' for='tel') Phone
+              input(class='contact__input'
+                type='tel'
+                id='tel'
+                name='tel'
+                pattern='8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
+                title='Phone must be in this format 8-XXX-XXX-XX-XX')
+            li(class='contact__item')
+              label(class='contact__label' for='subject') Subject
+              input(class='contact__input'
+                type='text'
+                id='subject'
+                name='subject'
+                pattern='[\\w\\s]{2,30}'
+                title='Subject can contain letters and digits from 2 to 50 symbols')
+            li(class='contact__item')
+              label(class='contact__label contact__label--req' for='message') Message
+              textarea(class='contact__textarea contact__input'
+                id='message'
+                name='message'
+                rows='2'
+                autocomplete='off'
+                required)
+
+        div(class='contact__policy-wrapper')
+          input(class='contact__checkbox-input visually-hidden'
+            type='checkbox'
+            id='privacy'
+            name='privacy'
+            required)
+          label(class='contact__checkbox-label' for='privacy')
+          p(class='contact__policy-text')
+            | I accept
+            |
+            a(class='contact__police-link' href='https://en.wikipedia.org/wiki/Privacy_policy' target='_blank') Terms&nbsp;and&nbsp;Privacy&nbsp;Policy
+
+        button(class='contact__button' type='submit') Send

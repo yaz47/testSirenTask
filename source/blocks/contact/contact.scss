@@ -1,68 +1,194 @@
 .contact {
   position: relative;
-  padding: 20px 0;
+  padding: 50px 0 100px;
 
-  color: $white;
+  font: $text-default;
+  color: $default-text-color;
 
   background:
-    top 0 center / 1600px 528px no-repeat url("../img/contact-back-desktop@1x.jpg"),
-    $midnight-blue;
+    linear-gradient(rgba($black, 0.3), rgba($black, 0.3)),
+    top 0 center / 1920px 1080px no-repeat url("../img/cosmos.jpg"),
+    $black;
 }
 
 .contact__title {
-  width: 50%;
-  margin: 20px auto;
+  margin: 40px auto;
 
-  font: $text-contact-title;
+  font: $text-title;
   color: $white;
   text-align: center;
 
   @media (max-width: $only-mobile-width) {
-    width: 80%;
-    margin: 15px auto;
-
-    font: $text-contact-title-mobile;
+    font: $text-title-mobile;
   }
 }
 
 .contact__form-wrapper {
-  width: 95%;
-  max-width: 500px;
-  margin: 25px auto;
+  position: relative;
+  padding: 20px 0;
 
+  border-radius: 27px;
+  background-color: $dark-blue;
+  box-shadow: 0 4px 53px 5px rgba($black, 0.55);
+
+  overflow-x: hidden;
+}
+
+.contact__inner-container {
+  position: relative;
+
+  margin: 0 45px;
+}
+
+.contact__text {
+  margin: 5px 0;
+
+  font: $text-form;
+  color: $white;
   text-align: center;
 
+  &--dark {
+    color: $blue;
+  }
+
+  &--small {
+    font: $text-form-label;
+  }
+
   @media (max-width: $only-mobile-width) {
-    margin: 20px auto;
+    font: $text-form-mobile;
+
+    &--small {
+      font: $text-form-label-mobile;
+    }
   }
 }
 
-.contact__input,
-.contact__textarea {
+.contact__label {
   display: block;
-  width: 100%;
-  margin: 25px 0;
-  padding: 10px 27px;
 
-  font: $text-contact-input;
-  color: $midnight-blue;
+  font: $text-form-label;
+  color: $blue;
 
-  border: none;
-  background-color: $dark-grayish-blue;
+  &--req::after {
+    content: "*";
+    display: inline;
 
-  &::placeholder {
-    font: inherit;
-    color: inherit;
+    font: $text-form-label;
+    color: $blue;
+    text-align: left;
   }
 
   @media (max-width: $only-mobile-width) {
-    margin: 20px 0;
+    font: $text-form-label-mobile;
 
-    font: $text-contact-input-mobile;
+    &--small {
+      font: $text-form-label-mobile;
+    }
   }
+}
+
+.contact__input {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px 0;
+
+  font: $text-form;
+  color: $pale-blue;
+  text-align: left;
+
+  border: none;
+  border-bottom: 1px solid $desaturated-blue;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $white;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    font: $text-form-mobile;
+  }
+}
+
+.contact__policy-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contact__checkbox-label {
+  position: relative;
+  display: block;
+  width: 31px;
+  height: 31px;
+
+  border-radius: 8px;
+  background-color: $medium-blue;
+
+  cursor: pointer;
+
+  @media (max-width: $only-mobile-width) {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.contact__checkbox-input:checked + .contact__checkbox-label {
+  background:
+    center / 16px 13px no-repeat url("../img/check.svg"),
+    $medium-blue;
+
+  @media (max-width: $only-mobile-width) {
+    background:
+      center / 13px 10px no-repeat url("../img/check.svg"),
+      $medium-blue;
+  }
+}
+
+/* stylelint-disable */
+.contact__checkbox-input:focus + .contact__checkbox-label {
+  outline: 1px dotted $ms-outline-color;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+/* stylelint-enable */
+
+.contact__policy-text {
+  margin: 0;
+  padding: 0;
+
+  font: $text-form-label;
+  color: $blue;
+  text-align: left;
+
+  @media (max-width: $only-mobile-width) {
+    font: $text-form-label-mobile;
+  }
+}
+
+.contact__police-link {
+  color: $grayish-blue;
+  text-decoration: underline;
 }
 
 .contact__button {
-  max-width: 400px;
-  margin: 10px;
+  @include defaultHoverEffect();
+
+  display: inline-block;
+  padding: 12px 30px;
+
+  font: $text-form;
+  color: $pale-blue;
+  text-align: center;
+
+  border: none;
+  border-radius: 22px;
+  background-color: $medium-blue;
+
+  @media (max-width: $only-mobile-width) {
+    padding: 10px 25px;
+
+    font: $text-form-mobile;
+
+    border-radius: 17px;
+  }
 }

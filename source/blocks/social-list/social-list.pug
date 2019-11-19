@@ -1,8 +1,0 @@
-mixin social-list(data)
-  ul(class=attributes.parentClass class='social-list')
-    each item in data
-      li(class='social-list__item')
-        a(class='social-list__link' href=`${item.href}` aria-label=`${item.name}`)
-          svg(class=`social-list__icon social-list__icon--${item.name}` width=`${item.width}` height=`${item.height}` role='img')
-            title #{item.name} icon
-            use(xlink:href=`#${item.name}`)
