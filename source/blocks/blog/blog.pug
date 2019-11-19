@@ -1,0 +1,30 @@
+section(class='blog')
+  div(class='blog__container container')
+    h2(class='blog__title') Blog
+    p(class='blog__text').
+      The point of using Lorem Ipsum is that it has a non  more-or-less  normal distribution of letters, as clipper opposed. A closer look to our fully.
+    div(class='blog__grid')
+
+      include ../article/article.pug
+
+      +article({
+        imageName: 'bike',
+        title: 'Design is the method of putting form and content together.',
+        type: 'Life style',
+        date: 'July 3, 2017',
+        text: 'Sed ut perspiciatis unde omnis iste natus error sit lao hoksi voluptatem lios mukatu accusantium doloremq doisa nojilaudan tium, totam rem aperiam, uni eaque ipsa quae ab cok illo inven tore siva.',
+      })(parentClass='blog__article')
+      +article({
+        imageName: 'lady',
+        title: 'Design is the method of putting form and content together.',
+        type: 'Life style',
+        date: 'July 3, 2017',
+        text: 'Sed ut perspiciatis unde omnis iste natus error sit lao hoksi voluptatem lios mukatu accusantium doloremq doisa nojilaudan tium, totam rem aperiam, uni eaque ipsa quae ab cok illo inven tore siva.',
+      })(parentClass='blog__article article--active')
+      +article({
+        imageName: 'couple',
+        title: 'Design is the method of putting form and content together.',
+        type: 'Life style',
+        date: 'July 3, 2017',
+        text: 'Sed ut perspiciatis unde omnis iste natus error sit lao hoksi voluptatem lios mukatu accusantium doloremq doisa nojilaudan tium, totam rem aperiam, uni eaque ipsa quae ab cok illo inven tore siva.',
+      })(parentClass='blog__article')

@@ -1,0 +1,121 @@
+footer(class='footer')
+  h2(class='visually-hidden') Learn about me
+  div(class='footer__container container')
+    div(class='footer__col-one')
+
+      include ../site-logo/site-logo.pug
+
+      +site-logo()(parentClass='footer__site-logo')
+      h3(class='footer__title-contact') Contact
+      address(class='footer__address')
+        | 237 Church St, San Francisco,
+        br
+        | CA 94114, USA
+        br
+        a(class='footer__address-mail'
+          href='mailto:nazmulhasanjingar@gmail.com?subject=Info') nazmulhasanjingar@gmail.com
+      h3(class='footer__title-contact') Follow me on:
+
+      include ../social-list/social-list.pug
+
+      +social-list([
+        {
+          name: 'facebook',
+          href: 'facebook.html',
+          width: '10',
+          height: '20'
+        },
+        {
+          name: 'twitter',
+          href: 'twitter.html',
+          width: '20',
+          height: '15'
+        },
+        {
+          name: 'instagram',
+          href: 'instagram.html',
+          width: '20',
+          height: '20'
+        },
+        {
+          name: 'flickr',
+          href: 'flickr.html',
+          width: '20',
+          height: '20'
+        }
+      ])(parentClass='footer__social-list social-list--slim')
+    div(class='footer__col-two')
+      h3(class='footer__title') Latest Blog Posts
+      div(class='footer__post-wrapper')
+        a(class='footer__post-link' href='blog.html')
+          article(class='footer__post')
+            div(class='footer__post-photo-wrapper')
+              picture
+                  source(type='image/webp' srcset='img/post1-desktop@1x.webp')
+                  img(src='img/post1-desktop@1x.jpg' alt='Post theme')
+            div(class='footer__post-container')
+              h4(class='footer__post-title') Design is the method of putting form and content together.
+              p(class='footer__post-type')
+                span(class='footer__post-type-text') Life style
+                |  -
+                |
+                span(class='footer__post-date') July 3, 2017
+        a(class='footer__post-link' href='blog.html')
+          article(class='footer__post')
+            div(class='footer__post-photo-wrapper')
+              picture
+                  source(type='image/webp' srcset='img/post2-desktop@1x.webp')
+                  img(src='img/post2-desktop@1x.jpg' alt='Post theme')
+            div(class='footer__post-container')
+              h4(class='footer__post-title') Design is the method of putting form and content together.
+              p(class='footer__post-type')
+                span(class='footer__post-type-text') Life style
+                |  -
+                |
+                span(class='footer__post-date') July 3, 2017
+
+        a(class='footer__post-more' href='blog.html') More...
+    div(class='footer__col-three')
+      h3(class='footer__title') Quick Link
+      nav(class='footer__navigation')
+        ul(class='footer__navigation-list')
+          li(class='footer__navigation-item')
+            a(class='footer__navigation-link') Home
+          li(class='footer__navigation-item')
+            a(class='footer__navigation-link' href='about.html') About
+          li(class='footer__navigation-item')
+            a(class='footer__navigation-link' href='clients.html') Clients
+          li(class='footer__navigation-item')
+            a(class='footer__navigation-link' href='portfolio.html') Portfolio
+          li(class='footer__navigation-item')
+            a(class='footer__navigation-link' href='blog.html') Blog
+    div(class='footer__col-four')
+      h3(class='footer__title') Instagram Update
+      ul(class='footer__insta-list')
+        li(class='footer__insta-item')
+          a(class='footer__insta-photo-wrapper' href='instagram.html')
+            picture
+              source(type='image/webp' srcset='img/insta1-desktop@1x.webp')
+              img(src='img/insta1-desktop@1x.jpg' alt='Instagram photo')
+        li(class='footer__insta-item')
+          a(class='footer__insta-photo-wrapper' href='instagram.html')
+            picture
+              source(type='image/webp' srcset='img/insta2-desktop@1x.webp')
+              img(src='img/insta2-desktop@1x.png' alt='Instagram photo')
+        li(class='footer__insta-item')
+          a(class='footer__insta-photo-wrapper' href='instagram.html')
+            picture
+              source(type='image/webp' srcset='img/insta3-desktop@1x.webp')
+              img(src='img/insta3-desktop@1x.jpg' alt='Instagram photo')
+        li(class='footer__insta-item')
+          a(class='footer__insta-photo-wrapper' href='instagram.html')
+            picture
+              source(type='image/webp' srcset='img/insta4-desktop@1x.webp')
+              img(src='img/insta4-desktop@1x.jpg' alt='Instagram photo')
+        li(class='footer__insta-item')
+          a(class='footer__insta-photo-wrapper' href='instagram.html')
+            picture
+              source(type='image/webp' srcset='img/insta5-desktop@1x.webp')
+              img(src='img/insta5-desktop@1x.jpg' alt='Instagram photo')
+  div(class='footer__copyright')
+    p(class='footer__copyright-text') All Rights @ 2017 By Nazmul Hasan Jingar

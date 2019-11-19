@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preload" href="fonts/muli-extralight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/muli-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/muli-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/muli-semibold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/trirong-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/trirong-regular.woff2" as="font" crossorigin="anonymous">
+  <link href="css/style.min.css" rel="stylesheet">
+  <title>Dakota Johnson - personal website</title>
+</head>
+
+<body>
+  <div style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="facebook" viewBox="0 0 320 512">
+        <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+      </symbol>
+      <symbol id="flickr" viewBox="0 0 448 512">
+        <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM144.5 319c-35.1 0-63.5-28.4-63.5-63.5s28.4-63.5 63.5-63.5 63.5 28.4 63.5 63.5-28.4 63.5-63.5 63.5zm159 0c-35.1 0-63.5-28.4-63.5-63.5s28.4-63.5 63.5-63.5 63.5 28.4 63.5 63.5-28.4 63.5-63.5 63.5z" />
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 448 512">
+        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+      </symbol>
+      <symbol id="scroll-down" viewBox="0 0 32 28">
+        <path stroke="#c4c5d2" fill="none" d="M30.5 10.857L15.213 26.514.485 11.482" />
+        <path stroke="#f3c305" fill="none" d="M30.5 1.194L15.213 16.851.485 1.819" />
+      </symbol>
+      <symbol id="twitter" viewBox="0 0 512 512">
+        <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+      </symbol>
+    </svg></div>
+  <header class="header">
+    <div class="header__container container"><a class="header__site-logo site-logo">
+        <picture class="site-logo__picture">
+          <source type="image/webp" srcset="img/logo-desktop@1x.webp"><img class="site-logo__img" src="img/logo-desktop@1x.png" alt="Personal logo"></picture>
+      </a><button class="header__toggle toggle toggle--animation toggle--active" type="button" aria-label="Открыть меню"><span class="toggle-box"><span class="toggle-inner"></span></span></button>
+      <nav class="header__navigation">
+        <ul class="header__navigation-list">
+          <li class="header__navigation-item"><a class="header__navigation-link header__navigation-link--current">Home</a></li>
+          <li class="header__navigation-item"><a class="header__navigation-link" href="about.html">About</a></li>
+          <li class="header__navigation-item"><a class="header__navigation-link" href="clients.html">Clients</a></li>
+          <li class="header__navigation-item"><a class="header__navigation-link" href="portfolio.html">Portfolio</a></li>
+          <li class="header__navigation-item"><a class="header__navigation-link" href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="intro">
+      <div class="intro__container container">
+        <h1 class="intro__title">Hello, I'm Dakota&nbsp;Jhonson</h1>
+        <p class="intro__text">I’m an Art Director & Photographer based in the San Francisco.</p><a class="intro__button button" href="portfolio.html">See My Works</a>
+      </div>
+      <div class="intro__social-wrapper">
+        <ul class="intro__social-list social-list">
+          <li class="social-list__item"><a class="social-list__link" href="facebook.html" aria-label="facebook"><svg class="social-list__icon social-list__icon--facebook" width="15" height="25" role="img">
+                <title>facebook icon</title>
+                <use xlink:href="#facebook"></use>
+              </svg></a></li>
+          <li class="social-list__item"><a class="social-list__link" href="twitter.html" aria-label="twitter"><svg class="social-list__icon social-list__icon--twitter" width="25" height="22" role="img">
+                <title>twitter icon</title>
+                <use xlink:href="#twitter"></use>
+              </svg></a></li>
+          <li class="social-list__item"><a class="social-list__link" href="instagram.html" aria-label="instagram"><svg class="social-list__icon social-list__icon--instagram" width="25" height="25" role="img">
+                <title>instagram icon</title>
+                <use xlink:href="#instagram"></use>
+              </svg></a></li>
+          <li class="social-list__item"><a class="social-list__link" href="flickr.html" aria-label="flickr"><svg class="social-list__icon social-list__icon--flickr" width="25" height="25" role="img">
+                <title>flickr icon</title>
+                <use xlink:href="#flickr"></use>
+              </svg></a></li>
+        </ul>
+      </div><button class="intro__scroll" type="button" aria-label="Scroll to personal description"><svg class="intro__scroll-icon" width="32" height="28" role="img">
+          <title>Arrow down</title>
+          <use xlink:href="#scroll-down"></use>
+        </svg></button>
+    </section>
+    <section class="about">
+      <div class="about__container container">
+        <h2 class="about__title">About MySelf</h2>
+        <p class="about__text">Hey, thanks for stopping by. My name’s Dakota Jhonson junior and I’m a brilliant Art Director and pro Photographer based in the San Francisco where I make cool things for agencies and brands around globe. Mentas is loaded with useful features, each one with its own meaningful purpose. We listen to our users and integrate their feature requests on a regular basis. If you like my work then please do not hesitate to reach out.</p>
+        <h3 class="about__section-title">What I Do?</h3>
+        <ul class="about__activities-list">
+          <li class="about__activities-item"><a class="about__activities-link" href="portfolio.html">
+              <h4 class="about__activities-title">Fashion</h4>
+              <div class="about__activities-photo-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/fashion-desktop@1x.webp"><img src="img/fashion-desktop@1x.jpg" alt="fashion"></picture>
+              </div>
+            </a></li>
+          <li class="about__activities-item"><a class="about__activities-link" href="portfolio.html">
+              <h4 class="about__activities-title">Portraits</h4>
+              <div class="about__activities-photo-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/portraits-desktop@1x.webp"><img src="img/portraits-desktop@1x.jpg" alt="portraits"></picture>
+              </div>
+            </a></li>
+          <li class="about__activities-item"><a class="about__activities-link" href="portfolio.html">
+              <h4 class="about__activities-title">Lifestyle</h4>
+              <div class="about__activities-photo-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/lifestyle-desktop@1x.webp"><img src="img/lifestyle-desktop@1x.jpg" alt="lifestyle"></picture>
+              </div>
+            </a></li>
+        </ul><a class="about__button button button--blue button--uppercase" href="https://www.flickr.com/" target="_blank">View My Flickr Profile</a>
+      </div>
+    </section>
+    <section class="clients">
+      <div class="clients__container container">
+        <h2 class="clients__title">Happy Clients</h2>
+        <ul class="clients__list">
+          <li class="clients__item"><a class="clients__link" href="#">
+              <div class="clients__photo-wrapper clients__photo-wrapper--salon">
+                <picture>
+                  <source type="image/webp" srcset="img/salon-desktop@1x.webp"><img src="img/salon-desktop@1x.png" alt="salon"></picture>
+              </div>
+            </a></li>
+          <li class="clients__item"><a class="clients__link" href="#">
+              <div class="clients__photo-wrapper clients__photo-wrapper--luscious">
+                <picture>
+                  <source type="image/webp" srcset="img/luscious-desktop@1x.webp"><img src="img/luscious-desktop@1x.png" alt="luscious"></picture>
+              </div>
+            </a></li>
+          <li class="clients__item"><a class="clients__link" href="#">
+              <div class="clients__photo-wrapper clients__photo-wrapper--brillbird">
+                <picture>
+                  <source type="image/webp" srcset="img/brillbird-desktop@1x.webp"><img src="img/brillbird-desktop@1x.png" alt="brillbird"></picture>
+              </div>
+            </a></li>
+          <li class="clients__item"><a class="clients__link" href="#">
+              <div class="clients__photo-wrapper clients__photo-wrapper--loxa">
+                <picture>
+                  <source type="image/webp" srcset="img/loxa-desktop@1x.webp"><img src="img/loxa-desktop@1x.png" alt="loxa"></picture>
+              </div>
+            </a></li>
+          <li class="clients__item"><a class="clients__link" href="#">
+              <div class="clients__photo-wrapper clients__photo-wrapper--minkys">
+                <picture>
+                  <source type="image/webp" srcset="img/minkys-desktop@1x.webp"><img src="img/minkys-desktop@1x.png" alt="minkys"></picture>
+              </div>
+            </a></li>
+          <li class="clients__item"><a class="clients__link" href="#">
+              <div class="clients__photo-wrapper clients__photo-wrapper--babaria">
+                <picture>
+                  <source type="image/webp" srcset="img/babaria-desktop@1x.webp"><img src="img/babaria-desktop@1x.png" alt="babaria"></picture>
+              </div>
+            </a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="portfolio__text-wrapper">
+        <div class="portfolio__text-container">
+          <h2 class="portfolio__title">Portfolio</h2>
+          <p class="portfolio__text">The point of using Lorem Ipsum is that it has a non more-or-less normal distribution of letters, as clipper opposed. A closer look to our fully furnished and beautiful demos, which can be easily found on this website. You can find some pictures I've taken during my travel. A close look to our fully furnished and so beautiful demos, which can be used.</p><a class="portfolio__more" href="portfolio.html">Read More...</a>
+        </div>
+      </div>
+      <div class="portfolio__grid-wrapper">
+        <div class="portfolio__col-one">
+          <div class="portfolio__photo-wrapper portfolio__photo-wrapper--xl portfolio__photo-wrapper--active" tabindex="0">
+            <picture>
+              <source type="image/webp" srcset="img/lens-desktop@1x.webp"><img src="img/lens-desktop@1x.jpg" alt="lens"></picture>
+            <div class="portfolio__share ya-share2" data-copy="hidden" data-description="photo" data-direction="horizontal" data-hashtags="photography" data-image="https://yaz47.github.io/testDETask/img/lens-desktop@1x.jpg" data-lang="en" data-limit="3" data-popup-direction="top" data-services="facebook,twitter,vkontakte" data-size="m" data-title="Portfolio" data-url="https://yaz47.github.io/testDETask/"></div>
+          </div>
+          <div class="portfolio__photo-wrapper portfolio__photo-wrapper--xl" tabindex="0">
+            <picture>
+              <source type="image/webp" srcset="img/wedding-desktop@1x.webp"><img src="img/wedding-desktop@1x.jpg" alt="wedding"></picture>
+            <div class="portfolio__share ya-share2" data-copy="hidden" data-description="photo" data-direction="horizontal" data-hashtags="photography" data-image="https://yaz47.github.io/testDETask/img/wedding-desktop@1x.jpg" data-lang="en" data-limit="3" data-popup-direction="top" data-services="facebook,twitter,vkontakte" data-size="m" data-title="Portfolio" data-url="https://yaz47.github.io/testDETask/"></div>
+          </div>
+        </div>
+        <div class="portfolio__col-two">
+          <div class="portfolio__photo-wrapper portfolio__photo-wrapper--l" tabindex="0">
+            <picture>
+              <source type="image/webp" srcset="img/coffee-desktop@1x.webp"><img src="img/coffee-desktop@1x.jpg" alt="coffee"></picture>
+            <div class="portfolio__share ya-share2" data-copy="hidden" data-description="photo" data-direction="horizontal" data-hashtags="photography" data-image="https://yaz47.github.io/testDETask/img/coffee-desktop@1x.jpg" data-lang="en" data-limit="3" data-popup-direction="top" data-services="facebook,twitter,vkontakte" data-size="m" data-title="Portfolio" data-url="https://yaz47.github.io/testDETask/"></div>
+          </div>
+          <div class="portfolio__photo-wrapper portfolio__photo-wrapper--s" tabindex="0">
+            <picture>
+              <source type="image/webp" srcset="img/woman-desktop@1x.webp"><img src="img/woman-desktop@1x.jpg" alt="woman"></picture>
+            <div class="portfolio__share ya-share2" data-copy="hidden" data-description="photo" data-direction="horizontal" data-hashtags="photography" data-image="https://yaz47.github.io/testDETask/img/woman-desktop@1x.jpg" data-lang="en" data-limit="3" data-popup-direction="top" data-services="facebook,twitter,vkontakte" data-size="m" data-title="Portfolio" data-url="https://yaz47.github.io/testDETask/"></div>
+          </div>
+          <div class="portfolio__photo-wrapper portfolio__photo-wrapper--m" tabindex="0">
+            <picture>
+              <source type="image/webp" srcset="img/violin-desktop@1x.webp"><img src="img/violin-desktop@1x.jpg" alt="violin"></picture>
+            <div class="portfolio__share ya-share2" data-copy="hidden" data-description="photo" data-direction="horizontal" data-hashtags="photography" data-image="https://yaz47.github.io/testDETask/img/violin-desktop@1x.jpg" data-lang="en" data-limit="3" data-popup-direction="top" data-services="facebook,twitter,vkontakte" data-size="m" data-title="Portfolio" data-url="https://yaz47.github.io/testDETask/"></div>
+          </div>
+          <div class="portfolio__photo-wrapper portfolio__photo-wrapper--m" tabindex="0">
+            <picture>
+              <source type="image/webp" srcset="img/glasses-desktop@1x.webp"><img src="img/glasses-desktop@1x.jpg" alt="glasses"></picture>
+            <div class="portfolio__share ya-share2" data-copy="hidden" data-description="photo" data-direction="horizontal" data-hashtags="photography" data-image="https://yaz47.github.io/testDETask/img/glasses-desktop@1x.jpg" data-lang="en" data-limit="3" data-popup-direction="top" data-services="facebook,twitter,vkontakte" data-size="m" data-title="Portfolio" data-url="https://yaz47.github.io/testDETask/"></div>
+          </div>
+          <div class="portfolio__photo-wrapper portfolio__photo-wrapper--xl" tabindex="0">
+            <picture>
+              <source type="image/webp" srcset="img/girl-desktop@1x.webp"><img src="img/girl-desktop@1x.jpg" alt="girl"></picture>
+            <div class="portfolio__share ya-share2" data-copy="hidden" data-description="photo" data-direction="horizontal" data-hashtags="photography" data-image="https://yaz47.github.io/testDETask/img/girl-desktop@1x.jpg" data-lang="en" data-limit="3" data-popup-direction="top" data-services="facebook,twitter,vkontakte" data-size="m" data-title="Portfolio" data-url="https://yaz47.github.io/testDETask/"></div>
+          </div>
+        </div><a class="portfolio__button button button--white button--uppercase" href="portfolio.html">See more</a>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="blog__container container">
+        <h2 class="blog__title">Blog</h2>
+        <p class="blog__text">The point of using Lorem Ipsum is that it has a non more-or-less normal distribution of letters, as clipper opposed. A closer look to our fully.</p>
+        <div class="blog__grid">
+          <article class="blog__article article" tabindex="0">
+            <div class="article__photo-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/bike-desktop@1x.webp"><img src="img/bike-desktop@1x.jpg" alt="bike"></picture>
+            </div>
+            <div class="article__container">
+              <h3 class="article__title">Design is the method of putting form and content together.</h3>
+              <p class="article__type"><span class="article__type-text">Life style</span> -
+                <span class="article__date">July 3, 2017</span></p>
+              <p class="article__text">Sed ut perspiciatis unde omnis iste natus error sit lao hoksi voluptatem lios mukatu accusantium doloremq doisa nojilaudan tium, totam rem aperiam, uni eaque ipsa quae ab cok illo inven tore siva.</p><a class="article__more" href="blog.html">Read More</a>
+            </div>
+          </article>
+          <article class="blog__article article--active article" tabindex="0">
+            <div class="article__photo-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/lady-desktop@1x.webp"><img src="img/lady-desktop@1x.jpg" alt="lady"></picture>
+            </div>
+            <div class="article__container">
+              <h3 class="article__title">Design is the method of putting form and content together.</h3>
+              <p class="article__type"><span class="article__type-text">Life style</span> -
+                <span class="article__date">July 3, 2017</span></p>
+              <p class="article__text">Sed ut perspiciatis unde omnis iste natus error sit lao hoksi voluptatem lios mukatu accusantium doloremq doisa nojilaudan tium, totam rem aperiam, uni eaque ipsa quae ab cok illo inven tore siva.</p><a class="article__more" href="blog.html">Read More</a>
+            </div>
+          </article>
+          <article class="blog__article article" tabindex="0">
+            <div class="article__photo-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/couple-desktop@1x.webp"><img src="img/couple-desktop@1x.jpg" alt="couple"></picture>
+            </div>
+            <div class="article__container">
+              <h3 class="article__title">Design is the method of putting form and content together.</h3>
+              <p class="article__type"><span class="article__type-text">Life style</span> -
+                <span class="article__date">July 3, 2017</span></p>
+              <p class="article__text">Sed ut perspiciatis unde omnis iste natus error sit lao hoksi voluptatem lios mukatu accusantium doloremq doisa nojilaudan tium, totam rem aperiam, uni eaque ipsa quae ab cok illo inven tore siva.</p><a class="article__more" href="blog.html">Read More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="contact__container container">
+        <h2 class="contact__title">Let's work?</h2>
+        <div class="contact__form-wrapper">
+          <form class="contact__form" method="POST" enctype="multipart/form-data" autocomplete="on" action="https://echo.htmlacademy.ru"><label class="visually-hidden" for="name">Name</label><input class="contact__input" type="text" id="name" name="name" pattern="[а-яА-ЯёЁ\w\s]{2,30}" title="Name can contain letters and digits from 2 to 30 symbols" placeholder="*Your name" required><label class="visually-hidden" for="email">Email</label><input class="contact__input" type="email" id="email" name="email" title="Email" placeholder="*Your Email" required><label class="visually-hidden" for="message">Message</label><textarea class="contact__textarea" id="message" name="message" placeholder="Your Messages" rows="3" autocomplete="off" required></textarea><button class="contact__button button button--uppercase" type="submit">Send Message</button></form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <h2 class="visually-hidden">Learn about me</h2>
+    <div class="footer__container container">
+      <div class="footer__col-one"><a class="footer__site-logo site-logo">
+          <picture class="site-logo__picture">
+            <source type="image/webp" srcset="img/logo-desktop@1x.webp"><img class="site-logo__img" src="img/logo-desktop@1x.png" alt="Personal logo"></picture>
+        </a>
+        <h3 class="footer__title-contact">Contact</h3>
+        <address class="footer__address">237 Church St, San Francisco,<br>CA 94114, USA<br><a class="footer__address-mail" href="mailto:nazmulhasanjingar@gmail.com?subject=Info">nazmulhasanjingar@gmail.com</a></address>
+        <h3 class="footer__title-contact">Follow me on:</h3>
+        <ul class="footer__social-list social-list--slim social-list">
+          <li class="social-list__item"><a class="social-list__link" href="facebook.html" aria-label="facebook"><svg class="social-list__icon social-list__icon--facebook" width="10" height="20" role="img">
+                <title>facebook icon</title>
+                <use xlink:href="#facebook"></use>
+              </svg></a></li>
+          <li class="social-list__item"><a class="social-list__link" href="twitter.html" aria-label="twitter"><svg class="social-list__icon social-list__icon--twitter" width="20" height="15" role="img">
+                <title>twitter icon</title>
+                <use xlink:href="#twitter"></use>
+              </svg></a></li>
+          <li class="social-list__item"><a class="social-list__link" href="instagram.html" aria-label="instagram"><svg class="social-list__icon social-list__icon--instagram" width="20" height="20" role="img">
+                <title>instagram icon</title>
+                <use xlink:href="#instagram"></use>
+              </svg></a></li>
+          <li class="social-list__item"><a class="social-list__link" href="flickr.html" aria-label="flickr"><svg class="social-list__icon social-list__icon--flickr" width="20" height="20" role="img">
+                <title>flickr icon</title>
+                <use xlink:href="#flickr"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+      <div class="footer__col-two">
+        <h3 class="footer__title">Latest Blog Posts</h3>
+        <div class="footer__post-wrapper"><a class="footer__post-link" href="blog.html">
+            <article class="footer__post">
+              <div class="footer__post-photo-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/post1-desktop@1x.webp"><img src="img/post1-desktop@1x.jpg" alt="Post theme"></picture>
+              </div>
+              <div class="footer__post-container">
+                <h4 class="footer__post-title">Design is the method of putting form and content together.</h4>
+                <p class="footer__post-type"><span class="footer__post-type-text">Life style</span> -
+                  <span class="footer__post-date">July 3, 2017</span></p>
+              </div>
+            </article>
+          </a><a class="footer__post-link" href="blog.html">
+            <article class="footer__post">
+              <div class="footer__post-photo-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/post2-desktop@1x.webp"><img src="img/post2-desktop@1x.jpg" alt="Post theme"></picture>
+              </div>
+              <div class="footer__post-container">
+                <h4 class="footer__post-title">Design is the method of putting form and content together.</h4>
+                <p class="footer__post-type"><span class="footer__post-type-text">Life style</span> -
+                  <span class="footer__post-date">July 3, 2017</span></p>
+              </div>
+            </article>
+          </a><a class="footer__post-more" href="blog.html">More...</a></div>
+      </div>
+      <div class="footer__col-three">
+        <h3 class="footer__title">Quick Link</h3>
+        <nav class="footer__navigation">
+          <ul class="footer__navigation-list">
+            <li class="footer__navigation-item"><a class="footer__navigation-link">Home</a></li>
+            <li class="footer__navigation-item"><a class="footer__navigation-link" href="about.html">About</a></li>
+            <li class="footer__navigation-item"><a class="footer__navigation-link" href="clients.html">Clients</a></li>
+            <li class="footer__navigation-item"><a class="footer__navigation-link" href="portfolio.html">Portfolio</a></li>
+            <li class="footer__navigation-item"><a class="footer__navigation-link" href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__col-four">
+        <h3 class="footer__title">Instagram Update</h3>
+        <ul class="footer__insta-list">
+          <li class="footer__insta-item"><a class="footer__insta-photo-wrapper" href="instagram.html">
+              <picture>
+                <source type="image/webp" srcset="img/insta1-desktop@1x.webp"><img src="img/insta1-desktop@1x.jpg" alt="Instagram photo"></picture>
+            </a></li>
+          <li class="footer__insta-item"><a class="footer__insta-photo-wrapper" href="instagram.html">
+              <picture>
+                <source type="image/webp" srcset="img/insta2-desktop@1x.webp"><img src="img/insta2-desktop@1x.png" alt="Instagram photo"></picture>
+            </a></li>
+          <li class="footer__insta-item"><a class="footer__insta-photo-wrapper" href="instagram.html">
+              <picture>
+                <source type="image/webp" srcset="img/insta3-desktop@1x.webp"><img src="img/insta3-desktop@1x.jpg" alt="Instagram photo"></picture>
+            </a></li>
+          <li class="footer__insta-item"><a class="footer__insta-photo-wrapper" href="instagram.html">
+              <picture>
+                <source type="image/webp" srcset="img/insta4-desktop@1x.webp"><img src="img/insta4-desktop@1x.jpg" alt="Instagram photo"></picture>
+            </a></li>
+          <li class="footer__insta-item"><a class="footer__insta-photo-wrapper" href="instagram.html">
+              <picture>
+                <source type="image/webp" srcset="img/insta5-desktop@1x.webp"><img src="img/insta5-desktop@1x.jpg" alt="Instagram photo"></picture>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <p class="footer__copyright-text">All Rights @ 2017 By Nazmul Hasan Jingar</p>
+    </div>
+  </footer><button class="scroll" type="button" aria-label="Scroll to the top"></button>
+  <div class="gh"><a class="gh__link gh__link--git" href="https://github.com/yaz47/testDETask" aria-label="Git Hub"></a><a class="gh__link" href="https://yaz47.github.io/testDETask/index.html">1</a></div>
+  <script src="js/script.min.js"></script>
+  <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+  <script src="https://yastatic.net/share2/share.js" async="async"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+{
+  "name": "testSirenTask",
+  "version": "1.0.0",
+  "description": "Test for a job at Siren",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp start",
+    "restart": "gulp initServer",
+    "test": "npm run test:pug && npm run test:style && npm run test:js",
+    "test:pug": "glob-exec \"source/**/*.pug\" -- \"pug-lint {{files.join(' ')}}\"",
+    "test:style": "stylelint \"source/**/*.scss\" --syntax=scss",
+    "test:js": "eslint source/js/**/*.js"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "lint-staged": {
+    "*.pug": "pug-lint",
+    "*.scss": "stylelint --syntax=scss",
+    "*.js": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "author": "Iaroslav Zaiarniy",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "autoprefixer": "^9.6.5",
+    "babel-eslint": "^10.0.3",
+    "browser-sync": "^2.26.7",
+    "core-js": "^3.3.3",
+    "del": "^5.1.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "glob-exec": "^0.1.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^6.1.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-pretty-html": "^2.0.10",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "node-sass": "^4.12.0",
+    "pug-lint": "^2.6.0",
+    "stylelint": "^11.1.1",
+    "stylelint-order": "^3.1.1",
+    "stylelint-selector-bem-pattern": "^2.1.0"
+  }
+}

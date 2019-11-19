@@ -1,0 +1,35 @@
+section(class='contact')
+  div(class='contact__container container')
+    h2(class='contact__title') Let's work?
+    div(class='contact__form-wrapper')
+      form(class='contact__form'
+        method='POST'
+        enctype='multipart/form-data'
+        autocomplete='on'
+        action='https://echo.htmlacademy.ru')
+        label(class='visually-hidden' for='name') Name
+        input(class='contact__input'
+          type='text'
+          id='name'
+          name='name'
+          pattern='[а-яА-ЯёЁ\\w\\s]{2,30}'
+          title='Name can contain letters and digits from 2 to 30 symbols'
+          placeholder='*Your name'
+          required)
+        label(class='visually-hidden' for='email') Email
+        input(class='contact__input'
+          type='email'
+          id='email'
+          name='email'
+          title='Email'
+          placeholder='*Your Email'
+          required)
+        label(class='visually-hidden' for='message') Message
+        textarea(class='contact__textarea'
+          id='message'
+          name='message'
+          placeholder='Your Messages'
+          rows='3'
+          autocomplete='off'
+          required)
+        button(class='contact__button button button--uppercase' type='submit') Send Message

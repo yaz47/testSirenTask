@@ -1,0 +1,15 @@
+mixin article(data)
+  article(class=attributes.parentClass class='article' tabindex='0')
+    div(class='article__photo-wrapper')
+      picture
+          source(type='image/webp' srcset=`img/${data.imageName}-desktop@1x.webp`)
+          img(src=`img/${data.imageName}-desktop@1x.jpg` alt=`${data.imageName}`)
+    div(class='article__container')
+      h3(class='article__title') #{data.title}
+      p(class='article__type')
+        span(class='article__type-text') #{data.type}
+        |  -
+        |
+        span(class='article__date') #{data.date}
+      p(class='article__text') #{data.text}
+      a(class='article__more' href='blog.html') Read More

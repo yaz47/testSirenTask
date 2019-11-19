@@ -1,0 +1,38 @@
+.button {
+  @include defaultHoverEffect();
+
+  display: inline-block;
+  padding: 18px 50px;
+
+  font: $text-button;
+  color: $midnight-blue;
+
+  border: none;
+  border-radius: 30px;
+  background-color: $gold;
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--blue {
+    color: $white;
+
+    background-color: $midnight-blue;
+  }
+
+  &--white {
+    color: $gold;
+
+    border: 1px solid $gold;
+    background-color: $white;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    padding: 12px 35px;
+
+    font: $text-button-mobile;
+
+    border-radius: 20px;
+  }
+}

@@ -1,0 +1,133 @@
+$toggle-padding-x: 10px;
+$toggle-padding-y: 10px;
+$toggle-layer-width: 20px;
+$toggle-layer-height: 2px;
+$toggle-layer-spacing: 4px;
+$toggle-layer-color: #ffffff;
+$toggle-layer-border-radius: 0;
+$toggle-hover-opacity: 0.7;
+$toggle-active-layer-color: $toggle-layer-color;
+
+.toggle {
+  display: inline-block;
+  margin: 0;
+  padding: $toggle-padding-y $toggle-padding-x;
+
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+
+  // Normalize (<button>)
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+
+  background-color: transparent;
+  border: 0;
+  overflow: visible;
+
+  &:hover {
+    opacity: $toggle-hover-opacity;
+  }
+
+  &.toggle--active {
+
+    &:hover {
+      opacity: $toggle-hover-opacity;
+    }
+
+    .toggle-inner,
+    .toggle-inner::before,
+    .toggle-inner::after {
+      background-color: $toggle-active-layer-color;
+    }
+  }
+}
+
+.toggle-box {
+  position: relative;
+  display: inline-block;
+  width: $toggle-layer-width;
+  height: $toggle-layer-height * 3 + $toggle-layer-spacing * 2;
+}
+
+.toggle-inner {
+  top: 50%;
+  display: block;
+  margin-top: $toggle-layer-height / -2;
+
+  &,
+  &::before,
+  &::after {
+    position: absolute;
+    width: $toggle-layer-width;
+    height: $toggle-layer-height;
+
+    border-radius: $toggle-layer-border-radius;
+    background-color: $toggle-layer-color;
+
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+  }
+
+  &::before {
+    top: ($toggle-layer-spacing + $toggle-layer-height) * -1;
+  }
+
+  &::after {
+    bottom: ($toggle-layer-spacing + $toggle-layer-height) * -1;
+  }
+}
+
+.toggle--animation {
+
+  .toggle-inner {
+    transition-duration: 0.22s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+    &::before {
+      transition:
+        top 0.1s 0.25s ease-in,
+        opacity 0.1s ease-in;
+    }
+
+    &::after {
+      transition:
+        bottom 0.1s 0.25s ease-in,
+        transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+  }
+
+  &.toggle--active {
+
+    .toggle-inner {
+      transform: rotate(225deg);
+      transition-delay: 0.12s;
+      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+      &::before {
+        top: 0;
+        opacity: 0;
+        transition:
+          top 0.1s ease-out,
+          opacity 0.1s 0.12s ease-out;
+      }
+
+      &::after {
+        bottom: 0;
+        transform: rotate(-90deg);
+        transition:
+          bottom 0.1s ease-out,
+          transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+    }
+  }
+}

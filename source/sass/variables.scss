@@ -1,0 +1,31 @@
+$tablet-width: 768px;
+$only-mobile-width: 767px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+$white: #ffffff;
+$blue: #797ea3;
+$pale-blue: #fefeff;
+$grayish-blue: #b9bee5;
+
+$black: #000000;
+$dark-blue: #171929;
+$desaturated-blue: #3f4363;
+$medium-blue: #2c2f47;
+
+$default-text-color: $white;
+
+$default-bg-color: $black;
+
+$default-font: "Roboto", "Arial", sans-serif;
+
+$text-default: normal 400 18px/1.2 $default-font;
+
+$text-title: normal 500 55px/1.2 $default-font;
+$text-title-mobile: normal 500 44px/1.2 $default-font;
+
+$text-form: normal 400 18px/1.2 $default-font;
+$text-form-mobile: normal 400 14.5px/1.2 $default-font;
+$text-form-label: normal 300 15px/1.2 $default-font;
+$text-form-label-mobile: normal 300 13px/1.2 $default-font;

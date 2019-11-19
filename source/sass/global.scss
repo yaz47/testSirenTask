@@ -1,0 +1,69 @@
+/* stylelint-disable plugin/selector-bem-pattern */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+body {
+  position: relative;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font: $text-default;
+  color: $default-text-color;
+
+  background-color: $default-bg-color;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  margin: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
