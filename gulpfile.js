@@ -100,7 +100,7 @@ function createSourceCss() {
       outputStyle: 'expanded',
       sourceComments: true
     }))
-    .pipe(rename('style.css'))
+    .pipe(rename('style.min.css'))
     .pipe(dest('source/css'));
 }
 
@@ -108,7 +108,7 @@ function createBuildJs() {
   return src([
       'source/js/polyfill.js',
       'source/js/picturefill.min.js',
-      'source/js/pixelglass.min.js',
+      // 'source/js/pixelglass.min.js',
       'source/js/utils.js',
       'source/js/backend.js',
       'source/js/renderMsg.js',
