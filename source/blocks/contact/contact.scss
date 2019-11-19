@@ -176,7 +176,6 @@
 
 .contact__policy-wrapper {
   display: flex;
-  flex-flow: row wrap;
 }
 
 .contact__checkbox-label {
@@ -184,6 +183,7 @@
 
   position: relative;
   display: block;
+  flex: 0 0 auto;
   width: 31px;
   height: 31px;
   margin: 0 7px 0 2px;

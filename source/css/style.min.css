@@ -704,14 +704,14 @@ body {
 /* line 177, source/blocks/contact/contact.scss */
 .contact__policy-wrapper {
   display: flex;
-  flex-flow: row wrap;
 }
 
-/* line 182, source/blocks/contact/contact.scss */
+/* line 181, source/blocks/contact/contact.scss */
 .contact__checkbox-label {
   transition: transform 0.2s ease-in;
   position: relative;
   display: block;
+  flex: 0 0 auto;
   width: 31px;
   height: 31px;
   margin: 0 7px 0 2px;
@@ -731,7 +731,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  /* line 182, source/blocks/contact/contact.scss */
+  /* line 181, source/blocks/contact/contact.scss */
   .contact__checkbox-label {
     width: 25px;
     height: 25px;
